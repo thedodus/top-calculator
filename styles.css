@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+.display-main-text {
+    font-size: 2rem;
+    text-align: right;
+}
+
+
+
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+.calc-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
