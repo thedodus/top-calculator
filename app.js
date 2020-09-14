@@ -1,3 +1,9 @@
+// VARIABLES
+
+const digits = document.querySelectorAll(".digit-btn");
+const clearButton = document.querySelector(".clear-btn");
+const displayMainText = document.querySelector(".display-main-text");
+let firstNumber = 0;
 
 // MATH FUNCTIONS
 
@@ -22,3 +28,19 @@ function operate(operator, a, b){
             break;
     }
 }
+
+function enterDigit(e) {
+    displayMainText.textContent += this.textContent;
+    firstNumber = Number(displayMainText.textContent);
+    console.log(firstNumber);
+}
+
+function clearScreen() {
+    firstNumber = 0;
+    displayMainText.textContent = "0";
+}
+
+// EVENT LISTENERS 
+
+digits.forEach(digit => digit.addEventListener("click", enterDigit));
+clearButton.addEventListener("click", clearScreen);
