@@ -1,6 +1,7 @@
 // VARIABLES
 
 const digits = document.querySelectorAll(".digit-btn");
+const operators = document.querySelectorAll(".operator-btn");
 const clearButton = document.querySelector(".clear-btn");
 const displayMainText = document.querySelector(".display-main-text");
 let firstNumber = 0;
@@ -28,6 +29,8 @@ function operate(operator, a, b){
             break;
     }
 }
+
+// CALCULATOR FUNCTIONS
 
 function enterDigit(e) {
     displayMainText.textContent += this.textContent;
