@@ -1,34 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: 'Rubik', sans-serif;
+    background-color: #434e5b;
+}
+
 h1 {
+    font-size: 3rem;
     text-align: center;
+    margin-top: 1em;
+    color: #000;
+}
+
+.display {
+    height: 80px;
+    text-align: right;
+    font-family: "Orbitron", sans-serif;
+    color: #fff;
+    margin-bottom: 1em;
 }
 
 .display-main-text {
-    font-size: 2rem;
-    text-align: right;
+    font-size: 3rem;
+    padding-top: .25em;
 }
 
-
-
 .calculator {
-    max-width: 500px;
+    position: absolute;
+    top: 20%;
+    left: 40.5%;
+    width: 350px;
     margin: 0 auto;
-    padding: 2em;
-    border-radius: 15px;
+    padding: 1em;
+    border-radius: 30px;
     border: 5px solid #000;
+    background-color: #000;
 }
 
 
 .calc-buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 .btn {
-    border-radius: 10px;
-    padding: 1em 2em;
+    height: 65px;
+    font-family: inherit;
+    border: none;
+    border-radius: 50%;
+    padding: .25em;
+    font-size: 1.5rem;
+    background-color: #555;
+    color: white;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover {
+    color: 
+}
+
+.operator-btn {
+    background-color: #F27B13;
+    color: black;
+}
+
+.special-btn {
+    background-color: #D7D7D9;
+    color: #000;
 }
 
 .zero {
+    border-radius: 30px;
     grid-area: 5 / 1 / 6 / 3;
+    text-align: left;
+    padding-left: 27px;
 }
