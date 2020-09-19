@@ -70,17 +70,25 @@ h1 {
 }
 
 .btn:hover {
-    color: 
+    background-color: #777;
 }
 
 .operator-btn {
     background-color: #F27B13;
-    color: black;
+    color: #000;
+}
+
+.operator-btn:hover {
+    background-color: #F2A663;
 }
 
 .special-btn {
     background-color: #D7D7D9;
     color: #000;
+}
+
+.special-btn:hover {
+    background-color: #fff;
 }
 
 .zero {
